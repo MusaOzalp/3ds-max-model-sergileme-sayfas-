@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitirme Projesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Giriş</a></li>
+                <li><a href="#about">Hakkında</a></li>
+                <li><a href="#services">Modeller</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Selam Ben Musa</h1>
+            <p>Front-End Developer</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h1>Hakkında</h1>
+            <p>Bu web sayfasının temel amacı, insan iç organlarını detaylı ve anlaşılır bir şekilde modelleyerek, tıp öğrencilerinden meraklılara kadar geniş bir kitleye bilgi sunmaktır. Her model, insan vücudunun karmaşıklığını ve güzelliğini vurgulamak için özenle hazırlanmıştır.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h1>Modeller</h1>
+            <div class="services">
+                <div class="service">
+                    <h2>Kalp</h2>
+                    <p>Kalp, insan vücudunun hayati organlarından biridir ve kanı dolaşım sistemi boyunca pompalamakla sorumludur. Ortalama bir yetişkinde kalp, dakikada yaklaşık 60-100 kez atar ve günde yaklaşık 100.000 kez kasılır. Bu süreçte, kalp yaklaşık 7.570 litre kanı vücuda pompalar.</p>
+                </div>
+                <div class="service">
+                    <h2>Mide</h2>
+                    <p>Mide, sindirim sisteminin önemli bir organıdır ve yiyeceklerin kimyasal sindirimine yardımcı olur. Yemek borusunun (özofagus) sonunda bulunur ve yaklaşık J şeklindedir. Midenin başlıca işlevi, tüketilen besinleri kimyasal olarak parçalamak ve sindirim sürecine hazırlamaktır.</p>
+                </div>
+                <div class="service">
+                    <h2>Akciğer</h2>
+                    <p>Akciğerler, solunum sisteminin temel organlarıdır ve vücuda oksijen alarak karbondioksiti dışarı atmakla görevlidir. İnsan vücudunda, göğüs boşluğunda bulunan ve sağ ve sol olmak üzere iki akciğer vardır. Sağ akciğer üç lobdan, sol akciğer ise iki lobdan oluşur; sol akciğerin bir lobu eksik olması, kalbe yer açmak içindir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
